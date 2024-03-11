@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <climits>
 
 using namespace std;
 
@@ -24,7 +26,7 @@ int getIntValue (const string& message = "Please Enter an Integer: ") {
 
 }
 
-bool getIntValue (int& enteredValue, const string& message = "Please Enter an Integer: ", int n = 3) {
+bool getIntValue (int& enteredValue, const string& message = "Please Enter an Integer: ", int n = 5) {
 
     int attempts = 0;
 
@@ -41,6 +43,9 @@ bool getIntValue (int& enteredValue, const string& message = "Please Enter an In
             attempts++;
         }
     }
-    
+
     return false;
 }
+
+int getIntValue(const string& message = "Please Enter an Integer: ", int minVal = INT_MIN, int maxVal = INT_MAX);
+bool getIntValue(int& enteredValue, const string& message = "Please Enter an Integer: ", int n = 5, int minVal = INT_MIN, int maxVal = INT_MAX);
