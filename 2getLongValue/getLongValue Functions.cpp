@@ -28,7 +28,7 @@ int main() {
     }
     cout << endl;
 
-    // Test for long input with a minimum value constraint
+    // Test for long input with a minimum value constraint and maximum value constraint
     cout << "Test for long input with a minimum value constraint:" << endl;
     long minConstrainedLong = getLongValue(true, 1000L);
     cout << "Entered value (min 1000): " << minConstrainedLong << endl << endl;
